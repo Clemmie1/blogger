@@ -14,7 +14,7 @@ class LoadSubscribersList extends Component
 
     public function getList()
     {
-        sleep(2);
+        sleep(1);
         $get = Subscription::where('channle_id', $this->channelID)->get();
         if (!$get->isEmpty()){
             $this->loadData = $get;
